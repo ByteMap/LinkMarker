@@ -1,0 +1,24 @@
+{
+  "name": "Marker",
+  "version": "1.0",
+  "description": "Opening In a New Tab Made Easier",
+  "manifest_version": 2,
+
+  "browser_action": {
+   "default_icon": "off.png",
+   "default_title": "Marked Links",
+   "default_popup": "popup.html"
+  },
+
+  "content_scripts": [ {
+  "matches": ["<all_urls>"],
+  "js": ["content.js"]
+    } 
+  ],
+
+  "permissions": [
+     "tabs",
+     "storage"
+  ]
+
+}
